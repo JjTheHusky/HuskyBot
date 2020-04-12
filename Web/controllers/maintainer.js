@@ -185,7 +185,7 @@ controllers.options.bot.post = async (req, res) => {
 	configJSON.activity.name = req.body.game;
 	configJSON.activity.type = req.body.type;
 	configJSON.activity.twitchURL = req.body.twitch;
-	if (req.body.game === "gawesomebot.com") {
+	if (req.body.game === "HuskyBot.com") {
 		configJSON.activity.name = "default";
 	}
 	if (req.body.status) configJSON.status = req.body.status;
@@ -398,7 +398,7 @@ controllers.management.version.post = async (req, res) => {
 controllers.management.version.socket = async socket => {
 	socket.on("disconnect", () => {
 		if (socket.isUpdateFinished || !socket.isUpdating) return;
-		logger.error("Lost connection to Updater client. Shutting down GAB in an attempt to resync states (⇀‸↼‶)");
+		logger.error("Lost connection to Updater client. Shutting down HuskyBot in an attempt to resync states (⇀‸↼‶)");
 		socket.route.router.app.client.IPC.send("shutdown", { err: true });
 	});
 	socket.on("download", async data => {

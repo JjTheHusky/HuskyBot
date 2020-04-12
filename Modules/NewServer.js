@@ -45,7 +45,7 @@ module.exports = async (client, server, serverDocument) => {
 		embed: {
 			color: 0x43B581,
 			title: `Hello! ${client.user.tag} (that's me) has been added to "${server}", a server you moderate!`,
-			description: `Use \`${client.getCommandPrefix(server, serverDocument)}help\` to learn more, or check out https://gawesomebot.com/ 🙂 🎉`,
+			description: `Use \`${client.getCommandPrefix(server, serverDocument)}help\` to learn more, or check out https://huskybot.net/ 🙂 🎉`,
 			footer: {
 				text: `${guildCount % 1000 === 0 ? `*Wow, you're server #${guildCount} for me!* 🎉` : ""}`,
 			},

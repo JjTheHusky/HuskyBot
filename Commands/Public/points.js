@@ -3,7 +3,7 @@ module.exports = async ({ Constants: { Colors, Text }, client }, { serverDocumen
 		msg.send({
 			embed: {
 				color: Colors.RESPONSE,
-				description: `You have **${userDocument.points}** GAwesomePoint${userDocument.points === 1 ? "" : "s"} ⭐`,
+				description: `You have **${userDocument.points}** HuskyPoints${userDocument.points === 1 ? "" : "s"} ⭐`,
 			},
 		});
 	} else if (msg.suffix) {
@@ -12,7 +12,7 @@ module.exports = async ({ Constants: { Colors, Text }, client }, { serverDocumen
 			msg.send({
 				embed: {
 					color: Colors.SOFT_ERR,
-					description: `Don't be silly, bots can't have GAwesomePoints! 🤖`,
+					description: `Don't be silly, bots can't have HuskyPoints! 🤖`,
 				},
 			});
 		} else if (member) {
@@ -46,7 +46,7 @@ module.exports = async ({ Constants: { Colors, Text }, client }, { serverDocumen
 			msg.send({
 				embed: {
 					color: Colors.RESPONSE,
-					title: fields.length === 1 ? `Here is the only member with GAwesomePoints 🌟` : `Here are the ${fields.length} members with the most GAwesomePoints 🌟`,
+					title: fields.length === 1 ? `Here is the only member with HuskyPoints 🌟` : `Here are the ${fields.length} members with the most HuskyPoints 🌟`,
 					fields,
 				},
 			});
@@ -54,7 +54,7 @@ module.exports = async ({ Constants: { Colors, Text }, client }, { serverDocumen
 			msg.send({
 				embed: {
 					color: Colors.SOFT_ERR,
-					description: "No one on this server has any GAwesomePoints! Use `+1` to upvote the previous message 🌠",
+					description: "No one on this server has any HuskyPoints! Use `+1` to upvote the previous message 🌠",
 				},
 			});
 		}
