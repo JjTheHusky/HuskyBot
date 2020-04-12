@@ -84,12 +84,12 @@
 											<label class="label">Game</label>
 											<div class="field is-embedded-message<%= !configData.game_default ? " has-addons" : ""%>">
 												<div class="control has-icons-left is-expanded">
-													<input name="game" id="user-game" class="input is-primary" type="text" value="<%= configData.game === "default" ? "gawesomebot.com" : configData.game %>" style="width: 100%;">
+													<input name="game" id="user-game" class="input is-primary" type="text" value="<%= configData.game === "default" ? "HuskyBot.com" : configData.game %>" style="width: 100%;">
 													<span class="icon"><i class="fa fa-gamepad"></i></span>
 												</div>
 												<div class="control">
         		                                	<% if(!configData.game_default) { %>
-														<a name="game-default" class="button" onclick="$('#user-game').val('gawesomebot.com');$('#user-type').val('PLAYING')">
+														<a name="game-default" class="button" onclick="$('#user-game').val('HuskyBot.com');$('#user-type').val('PLAYING')">
 															Default
 														</a>
 													<% } %>

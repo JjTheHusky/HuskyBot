@@ -6,7 +6,7 @@
     <script>
         let isPerformingAction = false;
         function shutdown() {
-          swal("Are you sure?", "GAwesomeBot will not be able to respond to Discord events while off.", {
+          swal("Are you sure?", "HuskyBot will not be able to respond to Discord events while off.", {
             dangerMode: true,
             buttons: [true, {
               text: "Shutdown",
@@ -20,7 +20,7 @@
               $("#shutdown").html("<span class=\"icon\"><i class=\"fa fa-power-off\"></i></span>Shutting down... Goodbye!");
               swal.stopLoading();
               swal("Success!", "You will be redirected shortly.", "success");
-              const redirect = () => window.location.replace("https://gawesomebot.com");
+              const redirect = () => window.location.replace("https://HuskyBot.com");
               setTimeout(redirect, 2000);
             });
           });

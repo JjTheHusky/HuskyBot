@@ -39,7 +39,7 @@ GAwesomeUtil.showActivitySelections = () => {
 		<div class="level-item">
 			<span class="select is-primary">
 				<select id="sort-select" onchange="Turbolinks.visit('/activity/servers?q=<%= pageData.activeSearchQuery %>&count=<%= pageData.itemsPerPage %>&page=<%= pageData.currentPage %>&sort=' + this.value + '&category=<%= pageData.selectedCategory %>&publiconly=<%= pageData.isPublicOnly %>');">
-					<option value="activity-des">GAB Determined Activity (default)</option>
+					<option value="activity-des">HuskyBot Determined Activity (default)</option>
 					<option value="messages-asc">Messages Today (ascending)</option>
 					<option value="messages-des">Messages Today (descending)</option>
 					<option value="members-asc">Members (ascending)</option>
@@ -149,7 +149,7 @@ GAwesomeUtil.showActivitySelections = () => {
 
 								<% if (server.invite_link) { %>
 									<div class="content">
-										Use <code><%= server.command_prefix %>help</code> to learn how to use GAwesomeBot on <%= server.name %>
+										Use <code><%= server.command_prefix %>help</code> to learn how to use HuskyBot on <%= server.name %>
 									</div>
 								<% } %>
 							</div>
@@ -231,7 +231,7 @@ GAwesomeUtil.showActivitySelections = () => {
 														<%- server.description %>
 													<% } %>
 													<% if (server.invite_link) { %>
-														Use <code><%= server.command_prefix %>help</code> to learn how to use GAwesomeBot on <%= server.name %>
+														Use <code><%= server.command_prefix %>help</code> to learn how to use HuskyBot on <%= server.name %>
 													<% } %>
 												</div>
 												<% if (server.invite_link) { %>
